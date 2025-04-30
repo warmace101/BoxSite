@@ -1,0 +1,22 @@
+form {
+  border: solid;
+  padding: 15px;
+  margin: 15px;
+  max-width: 250px;
+  margin-left: 47%;
+  margin-right: 40%;
+}
+form div {
+  padding: 15px;
+  margin: 15px;
+}
+main {
+  text-align: center;
+  max-width: 95%;
+}
+#createButton {
+  color: green;
+}
+#deleteButton {
+  background-color: red;
+}
