@@ -20,3 +20,23 @@ main {
 #deleteButton {
   background-color: red;
 }
+@media (max-width: 457px) {
+  main {
+    max-width: 80%;
+  }
+  form {
+    max-width: 350px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  form input {
+    padding: 15%;
+    margin: 5%;
+    max-width: 65%;
+    max-height: 15px;
+  }
+  form button {
+    padding: 15px;
+    background-color: orange;
+  }
+}
