@@ -20,7 +20,7 @@ main {
 #deleteButton {
   background-color: red;
 }
-@media (max-width: 457px) {
+@media (max-width: 500px) {
   main {
     max-width: 80%;
   }
