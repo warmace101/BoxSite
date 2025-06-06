@@ -14,6 +14,6 @@ const boxList = document.getElementById("boxList");
 
 data.forEach((box) => {
   const div = document.createElement("div");
-  div.textContent = `${box.date}: [${box.box_id}] PN: ${box.pn} | Qty: ${box.quantity} @ ${box.location}`;
+  div.textContent = `${box.date}: [PN: ${box.pn} | Qty: ${box.quantity} @ ${box.location}`;
   boxList.appendChild(div);
 });
