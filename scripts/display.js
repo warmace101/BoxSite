@@ -10,20 +10,18 @@ const { data, error } = await supabase
   .select("*")
   .order("date", { ascending: false });
 
-  if (error) {
-    console.error("Error loading boxes:", error);
-    boxList.textContent = "Failed to load boxes.";
-    return;
-    
-  }
+if (error) {
+  console.error("Error loading boxes:", error);
+  boxList.textContent = "Failed to load boxes.";
+  return;
+}
 
 const boxList = document.getElementById("boxList");
 // Data being created then stored on the HTML page.
 data.forEach((box) => {
   const div = document.createElement("div");
-  div.textContent = `--PN: ${box.pn} / QTY: ${box.quantity} / DATE: ${box.date} @ ${box.location}`;
+  div.innerHTML = `--PN: ${box.pn} / QTY: ${box.quantity} / DATE: ${box.date} @ ${box.location} <button>Delete</button>`;
   boxList.appendChild(div);
-}); 
-
+});
 
 //${box.date}: [PN: ${box.pn} | Qty: ${box.quantity}
