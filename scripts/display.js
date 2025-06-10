@@ -20,7 +20,7 @@ const boxList = document.getElementById("boxList");
 // Data being created then stored on the HTML page.
 data.forEach((box) => {
   const div = document.createElement("div");
-  div.innerHTML = `--PN: ${box.pn} / QTY: ${box.quantity} / DATE: ${box.date} @ ${box.location} <button>Delete</button>`;
+  div.innerHTML = `--PN: ${box.pn} / QTY: ${box.quantity} / DATE: ${box.date} @ ${box.location}`;
   boxList.appendChild(div);
 });
 
